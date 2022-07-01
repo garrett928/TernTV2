@@ -5,6 +5,7 @@ Note: The following instructions were written for Fedora 36 with Kernal 5.18.5. 
 
 # Dependencies
 - Python 3.10
+- Flask 2.1.2
 
 Note: a lower version of python and flask may work but has not been tested
 # Installation
