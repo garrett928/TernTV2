@@ -11,3 +11,16 @@ def home():
         title="Jinja Demo Site",
         description="Smarter page templates with Flask & Jinja."
     )
+
+# show the intern status messages
+@app.route("/tern_status")
+def status_page():
+    status = {
+        "Garrett" : "Rock Sleeper",
+        "Tessa" : "Concusion Getter",
+        "Elizabeth" : "Robot Dog Haver"
+    }
+    return render_template(
+        'tern_status.html',
+        status=status
+    )

@@ -9,9 +9,20 @@
     {% block css %}{% endblock %}
   </head>
 
+  <style>
+    .content {
+      max-width: 500px;
+      max-height: 100px;
+      margin: auto;
+    }
+  </style>
+
   <body>
     {% include 'nav.html' %}
+    <div class="content">
     {% block content %}{% endblock %}
+    </div>
   </body>
 
 </html>
+
