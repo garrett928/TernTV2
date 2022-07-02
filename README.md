@@ -15,7 +15,7 @@ Clone the repo:
 
 `cd TernTV2.git`
 
-## Virtual Evnironment
+## Virtual Environment
 It's best practice to work inside a clean virtual environment. Doing this will keep all the python packages we are about to install local to this project and this project only. This will prevent other python projects from conflicting with this project and vice versa. Run the following command to create an environment. 
 
 `python -m venv ./env`
