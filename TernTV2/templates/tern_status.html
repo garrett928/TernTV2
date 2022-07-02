@@ -6,6 +6,14 @@
 
 {% block content %}
     <div class="container">
-        <p>{{status}}</p>
+      <style>
+        P{
+          text-align: center;
+        }
+      </style>
+        {% for tern, stats in status.items()%}
+            <p>{{tern}}: {{stats}}</p>
+        {% endfor%}
+        
     </div>
 {% endblock %}
