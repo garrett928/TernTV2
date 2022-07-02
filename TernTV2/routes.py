@@ -25,3 +25,14 @@ def status_page():
         'tern_status.html',
         status=tern_status()
     )
+
+    # show the intern status messages
+@app.route("/slide_1")
+def slide_1():
+    return render_template(
+        '/slides/slide_base.html',
+        frame_1="http://127.0.0.1:5000/tern_status",
+        frame_2="http://127.0.0.1:5000/tern_status",
+        frame_3="http://127.0.0.1:5000/tern_status",
+        frame_4="http://127.0.0.1:5000/tern_status"
+        )
