@@ -42,6 +42,19 @@ To run the application simply type `flask run` from the top most project folder.
 
 # Deployment
 
+# Usage
+The file `tern_fig.json` houses all of the settings and configurations for the project. Fellow interns can edit this file with quotes, status messages, lost intern count, and more! These settings will be updated live on the tern_tv screen. Simply navigate to a webpage, listed below, and get the latest intern news. 
+
+### Webpages
+- "/" is the home page. Right now its a default and random page
+- "/tern_status" are the intern statuses, as read from the config file
+- "/slide_1" will be the first slide to rotate on the TV. Most slides will be a combination of other webpages. Right now slide one shows four copies of the "/tern_status" page.
+
+# TODO
+- Create better templates for the "slides". A 2x2, a side by side vertical, side by side horizontal,etc
+- Explain how this will be displayed on a tv using https://www.screenly.io/
+- Add colors with CSS or something
+
 
 More to come
 
