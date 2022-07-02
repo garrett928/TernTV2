@@ -55,6 +55,20 @@ The file `tern_fig.json` houses all of the settings and configurations for the p
 - Explain how this will be displayed on a tv using https://www.screenly.io/
 - Add colors with CSS or something
 
+-tribal counsol pictures
+-we tried kratos
+-tux fan club art
+-dino
+-ai quote of the day
+-intern quotes
+-foosball leader board
+-todays password
+-today in histoy
+-intern badges / roles
+-rp chart / grid
+-days since last
+-allignment chart
+
 
 More to come
 
