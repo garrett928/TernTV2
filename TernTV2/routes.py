@@ -30,7 +30,7 @@ def status_page():
 @app.route("/slide_1")
 def slide_1():
     return render_template(
-        '/slides/slide_base.html',
+        '/slides/slide_2_x_2.html',
         frame_1="http://127.0.0.1:5000/tern_status",
         frame_2="http://127.0.0.1:5000/tern_status",
         frame_3="http://127.0.0.1:5000/tern_status",
