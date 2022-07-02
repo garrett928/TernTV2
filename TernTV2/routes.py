@@ -1,6 +1,7 @@
 """Route declaration."""
 from flask import current_app as app
 from flask import render_template
+from TernTV2.tern_helpers.status_grabber import tern_status
 
 
 @app.route("/")
@@ -22,5 +23,5 @@ def status_page():
     }
     return render_template(
         'tern_status.html',
-        status=status
+        status=tern_status()
     )
