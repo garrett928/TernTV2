@@ -4,6 +4,7 @@ from flask import current_app as app
 from flask import render_template
 from TernTV2.tern_helpers.status_grabber import tern_status
 from TernTV2.tern_helpers import passwd_grabber
+import json
 
 
 @app.route("/")
@@ -58,3 +59,13 @@ def slide_1():
         frame_3="http://127.0.0.1:5000/tern_pass",
         frame_4="http://127.0.0.1:5000/tern_status"
         )
+
+            
+@app.route("/tern_fig")
+def tern_fig():
+    json_file = 'tern_fig.json'
+
+    with open(json_file) as jf:
+        data = json.load(jf)
+    jf.close()
+    return data
