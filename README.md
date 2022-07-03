@@ -54,6 +54,10 @@ The file `tern_fig.json` houses all of the settings and configurations for the p
 - Create better templates for the "slides". A 2x2, a side by side vertical, side by side horizontal,etc
 - Explain how this will be displayed on a tv using https://www.screenly.io/
 - Add colors with CSS or something
+- add instructions for enabling ssh on the pi
+- add instructions for installing screenly
+- make develop branch
+- make pi auto pull new master branch changes
 
 -tribal counsol pictures
 -we tried kratos
