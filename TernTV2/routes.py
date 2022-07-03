@@ -60,7 +60,8 @@ def slide_1():
         frame_4="http://127.0.0.1:5000/tern_status"
         )
 
-            
+        
+# route to show raw json config file
 @app.route("/tern_fig")
 def tern_fig():
     json_file = 'tern_fig.json'

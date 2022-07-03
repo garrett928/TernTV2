@@ -38,7 +38,7 @@ Inside the virtual enironment run:
 `pip install -r requirements.txt`
 
 # Running the application
-To run the application simply type `flask run` from the top most project folder.
+To run the application simply type `flask run` from the top most project folder. Note: The project will not run if not ran from the top level project folder.
 
 # Deployment
 
