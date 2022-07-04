@@ -1,19 +1,15 @@
 {% extends 'centered_layout.html' %}
 
-{% block css %}
-  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
-{% endblock %}
-
 {% block content %}
-    <div class="container">
       <style>
         P{
           text-align: center;
         }
+
       </style>
+      <div>
         {% for tern, stats in status.items()%}
             <p>{{tern}}: {{stats}}</p>
         {% endfor%}
-        
-    </div>
+      </div>
 {% endblock %}
