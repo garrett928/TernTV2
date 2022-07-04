@@ -1,7 +1,7 @@
 # TernTV2.0
-All the latest intern news and updates brought to you on an underpowered and over priced raspberry pi
+All the latest intern news and updates brought to you on an underpowered and over priced raspberry pi.
 
-Note: The following instructions were written for Fedora 36 with Kernal 5.18.5. This should work fine on other linux distros and windows as well. 
+Note: The following instructions were written for Fedora 36 with Kernal 5.18.5. This should work fine on other linux distros and windows as well. Notes are included where the instrucions differ from the raspberry pi.
 
 # Dependencies
 - Python 3.10
@@ -18,7 +18,11 @@ Clone the repo:
 ## Virtual Environment
 It's best practice to work inside a clean virtual environment. Doing this will keep all the python packages we are about to install local to this project and this project only. This will prevent other python projects from conflicting with this project and vice versa. Run the following command to create an environment. 
 
-`python -m venv ./env`
+Note: on some sytems you only need `python` not `python3`. You can check by running `python --version` and seeing if it returns python 2 or python 3. This projects needs python 3.
+
+Note: you may need to install venv with `sudo apt-get install python3-venv` on the rasp pi.
+
+`python3 -m venv ./env`
 
 Next, we need to activate the virtual environment in order to use it. Note: you will have to do this every time you open up a terminal to work on the project.
 
@@ -31,6 +35,9 @@ You can check that the virtual environment is active by running:
 The output should be along the lines of "/path/to/this/project/env/bin/python". If it says "/usr/bin/python" then the environment is not active. 
 
 Note: The paths mentioned above may be different on windows but the correct path should still include the path to your project folder. 
+
+### Alternate virtual envrionment setup
+If venv is not working, you can try using `virtualenv`.Both will achieve the same result. If on the pi, run `sudo apt-get install virtualenv`. After installing, run `virtualenv -p python3./env` to install the virtual environment. And then, `source ./env/bin/activate` to activate it. Lastly, run `which python` and `python --version` to ensure that the path to python is the path to the cloned github repo and the version is python 3.
 
 ## Install dependicies
 Inside the virtual enironment run:
