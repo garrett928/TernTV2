@@ -15,29 +15,34 @@
     .clear {
       clear: both;
     }
+    body{
+      background: black;
+    }
   </style>
 </head>
 
 <html>
-<div class="left_box">
-  <div>
-    <iframe src={{frame_1}} frameborder="0" scrolling="no" width="100%" height="50%" align="left">
-    </iframe>
-  </div>
-  <div>
-    <iframe src={{frame_3}} frameborder="0" scrolling="no" width="100%" height="50%" align="right">
-    </iframe>
-  </div>
-</div>
+  <body>
+    <div class="left_box">
+      <div>
+        <iframe src={{frame_1}} frameborder="0" scrolling="no" width="100%" height="50%" align="left">
+        </iframe>
+      </div>
+        <div>
+          <iframe src={{frame_3}} frameborder="0" scrolling="no" width="100%" height="50%" align="right">
+          </iframe>
+        </div>
+    </div>
 
-<div class="right_box">
-  <div>
-    <iframe src={{frame_2}} frameborder="0" scrolling="no" width="100%" height="50%" align="left">
-    </iframe>
-  </div>
-  <div>
-    <iframe src={{frame_4}} frameborder="0" scrolling="no" width="100%" height="50%" align="right">
-    </iframe>
-  </div>
-</div>
+    <div class="right_box">
+      <div>
+        <iframe src={{frame_2}} frameborder="0" scrolling="no" width="100%" height="50%" align="left">
+        </iframe>
+    </div>
+      <div>
+        <iframe src={{frame_4}} frameborder="0" scrolling="no" width="100%" height="50%" align="right">
+        </iframe>
+      </div>
+    </div>
+  </body>
 </html>
